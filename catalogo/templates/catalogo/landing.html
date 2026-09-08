@@ -6,39 +6,102 @@
 {% block content %}
 <section class="hero">
     <div class="hero-content">
+        <span class="hero-badge">🔩 Desde 1990</span>
         <h1>Ferretería El Martillo</h1>
-        <p class="hero-sub">Todo lo que necesitas para tu proyecto de construcción y hogar</p>
-        <p class="hero-desc">Más de 40 productos de calidad en herramientas, pinturas, plomería y electricidad.</p>
-        <a href="{% url 'catalogo:lista' %}" class="hero-btn">Ver catálogo</a>
+        <p class="hero-sub">Tu aliado de confianza en construcción y hogar</p>
+        <p class="hero-desc">Más de 40 productos de calidad en herramientas, pinturas, plomería y electricidad. Los mejores precios para tus proyectos.</p>
+        <div class="hero-botones">
+            <a href="{% url 'catalogo:lista' %}" class="hero-btn-primary">Ver catálogo</a>
+            <a href="{% url 'catalogo:registro' %}" class="hero-btn-secondary">Crear cuenta</a>
+        </div>
+    </div>
+    <div class="hero-stats">
+        <div class="stat">
+            <span class="stat-num">40+</span>
+            <span class="stat-label">Productos</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Categorías</span>
+        </div>
+        <div class="stat">
+            <span class="stat-num">24h</span>
+            <span class="stat-label">Despacho</span>
+        </div>
     </div>
 </section>
 
-<section class="features">
-    <div class="feature">
-        <div class="feature-icon">🔨</div>
-        <h3>Herramientas</h3>
-        <p>Manuales y eléctricas de las mejores marcas</p>
-    </div>
-    <div class="feature">
-        <div class="feature-icon">🎨</div>
-        <h3>Pinturas</h3>
-        <p>Acabados, brochas y todo para pintar</p>
-    </div>
-    <div class="feature">
-        <div class="feature-icon">🔧</div>
-        <h3>Plomería</h3>
-        <p>Tubos, conexiones y accesorios</p>
-    </div>
-    <div class="feature">
-        <div class="feature-icon">💡</div>
-        <h3>Electricidad</h3>
-        <p>Cables, interruptores e iluminación</p>
+<section class="categorias">
+    <h2 class="section-title">Nuestras categorías</h2>
+    <p class="section-sub">Todo lo que necesitas en un solo lugar</p>
+    <div class="cat-grid">
+        <a href="{% url 'catalogo:lista' %}" class="cat-card">
+            <div class="cat-icon">🔨</div>
+            <h3>Herramientas manuales</h3>
+            <p>Martillos, destornilladores, llaves y más</p>
+            <span class="cat-link">Ver productos →</span>
+        </a>
+        <a href="{% url 'catalogo:lista' %}" class="cat-card">
+            <div class="cat-icon">⚡</div>
+            <h3>Herramientas eléctricas</h3>
+            <p>Taladros, amoladoras, sierras circulares</p>
+            <span class="cat-link">Ver productos →</span>
+        </a>
+        <a href="{% url 'catalogo:lista' %}" class="cat-card">
+            <div class="cat-icon">🪛</div>
+            <h3>Fijaciones</h3>
+            <p>Tornillos, clavos, tarugos y anclajes</p>
+            <span class="cat-link">Ver productos →</span>
+        </a>
+        <a href="{% url 'catalogo:lista' %}" class="cat-card">
+            <div class="cat-icon">🎨</div>
+            <h3>Pinturas y acabados</h3>
+            <p>Pinturas, brochas, rodillos y lijas</p>
+            <span class="cat-link">Ver productos →</span>
+        </a>
+        <a href="{% url 'catalogo:lista' %}" class="cat-card">
+            <div class="cat-icon">🔧</div>
+            <h3>Plomería</h3>
+            <p>Tubos PVC, conexiones, llaves de paso</p>
+            <span class="cat-link">Ver productos →</span>
+        </a>
+        <a href="{% url 'catalogo:lista' %}" class="cat-card">
+            <div class="cat-icon">💡</div>
+            <h3>Electricidad</h3>
+            <p>Cables, interruptores, iluminación LED</p>
+            <span class="cat-link">Ver productos →</span>
+        </a>
     </div>
 </section>
 
-<section class="cta">
-    <h2>¿Listo para empezar?</h2>
-    <p>Explora nuestro catálogo y encuentra todo lo que necesitas</p>
-    <a href="{% url 'catalogo:lista' %}" class="cta-btn">Ir al catálogo →</a>
+<section class="beneficios">
+    <div class="beneficio">
+        <div class="ben-icon">🚚</div>
+        <h3>Despacho rápido</h3>
+        <p>Entrega en 24 horas a todo el país</p>
+    </div>
+    <div class="beneficio">
+        <div class="ben-icon">💳</div>
+        <h3>Pago seguro</h3>
+        <p>Múltiples medios de pago disponibles</p>
+    </div>
+    <div class="beneficio">
+        <div class="ben-icon">🛡️</div>
+        <h3>Garantía</h3>
+        <p>Todos nuestros productos con garantía</p>
+    </div>
+    <div class="beneficio">
+        <div class="ben-icon">📞</div>
+        <h3>Atención 24/7</h3>
+        <p>Estamos para ayudarte cuando nos necesites</p>
+    </div>
+</section>
+
+<section class="cta-final">
+    <div class="cta-contenido">
+        <h2>¿Listo para empezar tu proyecto?</h2>
+        <p>Explora nuestro catálogo y encuentra todo lo que necesitas al mejor precio</p>
+        <a href="{% url 'catalogo:lista' %}" class="cta-btn-final">Ir al catálogo →</a>
+    </div>
 </section>
 {% endblock %}
