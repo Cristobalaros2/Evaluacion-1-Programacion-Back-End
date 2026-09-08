@@ -18,18 +18,18 @@ body {
 header {
     background: linear-gradient(135deg, #1a5276, #2e86c1);
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 header p {
     opacity: 0.9;
-    margin-top: 0.3rem;
-    font-size: 0.95rem;
+    margin-top: 0.2rem;
+    font-size: 0.85rem;
 }
 
 /* === NAV === */
@@ -102,7 +102,7 @@ nav .nav-user .btn-logout:hover {
 /* === MAIN === */
 main {
     max-width: 1100px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     padding: 0 1.5rem;
     flex: 1;
     width: 100%;
@@ -113,9 +113,9 @@ footer {
     background: #1a5276;
     color: #aed6f1;
     text-align: center;
-    padding: 1.2rem;
-    margin-top: 3rem;
-    font-size: 0.85rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
 }
 
 /* === LISTA: RESUMEN === */
