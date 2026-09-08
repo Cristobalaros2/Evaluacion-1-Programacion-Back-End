@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "nombre": "Martillo de uñas 16oz",
+    "categoria": "Herramientas manuales",
+    "precio": 15990,
+    "stock": 25,
+    "imagen": "images/01-martillo.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Destornillador plano 6mm",
+    "categoria": "Herramientas manuales",
+    "precio": 4990,
+    "stock": 40,
+    "imagen": "images/02-destornillador.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Llave inglesa 12 pulgadas",
+    "categoria": "Herramientas manuales",
+    "precio": 12990,
+    "stock": 15,
+    "imagen": "images/03-llave-inglesa.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Alicate de presión 8 pulgadas",
+    "categoria": "Herramientas manuales",
+    "precio": 9990,
+    "stock": 0,
+    "imagen": "images/04-alicate.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Sierra manual 20 pulgadas",
+    "categoria": "Herramientas manuales",
+    "precio": 18990,
+    "stock": 8,
+    "imagen": "images/05-sierra-manual.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Nivel de burbuja 60cm",
+    "categoria": "Herramientas manuales",
+    "precio": 14990,
+    "stock": 12,
+    "imagen": "images/06-nivel-burbuja.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Cinta métrica 5 metros",
+    "categoria": "Herramientas manuales",
+    "precio": 3990,
+    "stock": 50,
+    "imagen": "images/07-cinta-metrica.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Pinza de corte diagonal",
+    "categoria": "Herramientas manuales",
+    "precio": 7990,
+    "stock": 0,
+    "imagen": "images/08-alicate-corte.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Llave torx set 10 piezas",
+    "categoria": "Herramientas manuales",
+    "precio": 8990,
+    "stock": 20,
+    "imagen": "images/09-llave-torx.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Taladro eléctrico 650W",
+    "categoria": "Herramientas eléctricas",
+    "precio": 45990,
+    "stock": 10,
+    "imagen": "images/10-taladro.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Amoladora angular 4.5 pulgadas",
+    "categoria": "Herramientas eléctricas",
+    "precio": 39990,
+    "stock": 7,
+    "imagen": "images/11-amoladora.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Sierra circular 7.25 pulgadas",
+    "categoria": "Herramientas eléctricas",
+    "precio": 69990,
+    "stock": 5,
+    "imagen": "images/12-sierra-circular.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Rotomartillo SDS 800W",
+    "categoria": "Herramientas eléctricas",
+    "precio": 59990,
+    "stock": 0,
+    "imagen": "images/13-set-brocas.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Lijadora orbital 1/3 HP",
+    "categoria": "Herramientas eléctricas",
+    "precio": 29990,
+    "stock": 9,
+    "imagen": "images/14-lijadora-orbital.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Caladora 6.5A",
+    "categoria": "Herramientas eléctricas",
+    "precio": 34990,
+    "stock": 6,
+    "imagen": "images/15-caladora.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Compresor de aire 6 HP",
+    "categoria": "Herramientas eléctricas",
+    "precio": 189990,
+    "stock": 3,
+    "imagen": "images/16-compresor.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Pistola de calor 1500W",
+    "categoria": "Herramientas eléctricas",
+    "precio": 19990,
+    "stock": 11,
+    "imagen": "images/17-pistola-calor.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Soldador inversor 200A",
+    "categoria": "Herramientas eléctricas",
+    "precio": 89990,
+    "stock": 4,
+    "imagen": "images/18-soldador.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Generator portátil 3500W",
+    "categoria": "Herramientas eléctricas",
+    "precio": 299990,
+    "stock": 2,
+    "imagen": "images/19-generator.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Tornillos para madera #8 x 2\"",
+    "categoria": "Fijaciones",
+    "precio": 2990,
+    "stock": 200,
+    "imagen": "images/20-tornillos.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Clavos de acero 3 pulgadas",
+    "categoria": "Fijaciones",
+    "precio": 1990,
+    "stock": 300,
+    "imagen": "images/21-clavos.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Tarugos de nailon 6mm",
+    "categoria": "Fijaciones",
+    "precio": 3490,
+    "stock": 150,
+    "imagen": "images/22-tarugos.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Anclajes químicos 300ml",
+    "categoria": "Fijaciones",
+    "precio": 12990,
+    "stock": 25,
+    "imagen": "images/23-anclajes.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "Bisagras reforzadas 3 pulgadas",
+    "categoria": "Fijaciones",
+    "precio": 4990,
+    "stock": 80,
+    "imagen": "images/24-bisagras.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Candado de seguridad 60mm",
+    "categoria": "Fijaciones",
+    "precio": 7990,
+    "stock": 30,
+    "imagen": "images/25-candado.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "Pintura acrílica blanca 1 galón",
+    "categoria": "Pinturas y acabados",
+    "precio": 18990,
+    "stock": 45,
+    "imagen": "images/26-pintura.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "Pintura esmalte negro 1 galón",
+    "categoria": "Pinturas y acabados",
+    "precio": 21990,
+    "stock": 0,
+    "imagen": "images/27-pintura-esmalte.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "Rodillo de fieltro 9 pulgadas",
+    "categoria": "Pinturas y acabados",
+    "precio": 5990,
+    "stock": 35,
+    "imagen": "images/28-rodillo.jpg"
+  },
+  {
+    "id": 29,
+    "nombre": "Brocha 4 pulgadas",
+    "categoria": "Pinturas y acabados",
+    "precio": 3990,
+    "stock": 60,
+    "imagen": "images/29-brocha.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "Masking tape 2 pulgadas",
+    "categoria": "Pinturas y acabados",
+    "precio": 2990,
+    "stock": 100,
+    "imagen": "images/30-masking-tape.jpg"
+  },
+  {
+    "id": 31,
+    "nombre": "Lija grano 120 (10 hojas)",
+    "categoria": "Pinturas y acabados",
+    "precio": 4990,
+    "stock": 70,
+    "imagen": "images/31-lija.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "Lodo para pared 25kg",
+    "categoria": "Pinturas y acabados",
+    "precio": 14990,
+    "stock": 20,
+    "imagen": "images/32-lodo.jpg"
+  },
+  {
+    "id": 33,
+    "nombre": "Tubo PVC 2\" x 6m",
+    "categoria": "Plomería",
+    "precio": 8990,
+    "stock": 40,
+    "imagen": "images/33-tubo-pvc.jpg"
+  },
+  {
+    "id": 34,
+    "nombre": "Codo PVC 90° 1/2\"",
+    "categoria": "Plomería",
+    "precio": 990,
+    "stock": 120,
+    "imagen": "images/34-codo-pvc.jpg"
+  },
+  {
+    "id": 35,
+    "nombre": "Llave de paso 1/2\"",
+    "categoria": "Plomería",
+    "precio": 12990,
+    "stock": 18,
+    "imagen": "images/35-llave-paso.jpg"
+  },
+  {
+    "id": 36,
+    "nombre": "Silicona transparente 300ml",
+    "categoria": "Plomería",
+    "precio": 4990,
+    "stock": 55,
+    "imagen": "images/36-silicona.jpg"
+  },
+  {
+    "id": 37,
+    "nombre": "Cinta teflón 1/2\"",
+    "categoria": "Plomería",
+    "precio": 1490,
+    "stock": 90,
+    "imagen": "images/37-cinta-teflon.jpg"
+  },
+  {
+    "id": 38,
+    "nombre": "Cable THW #12 (100m)",
+    "categoria": "Electricidad",
+    "precio": 69990,
+    "stock": 15,
+    "imagen": "images/38-cable.jpg"
+  },
+  {
+    "id": 39,
+    "nombre": "Interruptor simple polaridad",
+    "categoria": "Electricidad",
+    "precio": 2990,
+    "stock": 85,
+    "imagen": "images/39-interruptor.jpg"
+  },
+  {
+    "id": 40,
+    "nombre": "Lámpara LED 15W dulce",
+    "categoria": "Electricidad",
+    "precio": 4990,
+    "stock": 0,
+    "imagen": "images/40-lampara.jpg"
+  }
+]

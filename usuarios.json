@@ -1,0 +1,14 @@
+[
+  {
+    "username": "admin",
+    "email": "admin@ferreteria.cl",
+    "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "rol": "admin"
+  },
+  {
+    "username": "cris",
+    "email": "arosc7276@gmail.com",
+    "password": "825db79c6e2005723ada0239e1a039e6711b782a1b797b6b30339fdfd8641008",
+    "rol": "usuario"
+  }
+]
