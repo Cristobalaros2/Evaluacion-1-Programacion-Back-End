@@ -554,9 +554,20 @@ def realizar_compra(request):
 
     _guardar_productos(productos)
 
-    # Calcular total
-    total = sum(item["precio"] * item["cantidad"] for item in carrito)
-    items_comprados = carrito[:]
+    # Calcular total y subtotales
+    total = 0
+    items_comprados = []
+    for item in carrito:
+        subtotal = item["precio"] * item["cantidad"]
+        total += subtotal
+        items_comprados.append({
+            "id": item["id"],
+            "nombre": item["nombre"],
+            "precio": item["precio"],
+            "imagen": item["imagen"],
+            "cantidad": item["cantidad"],
+            "subtotal": subtotal,
+        })
 
     # Vaciar carrito
     _guardar_carrito(username, [])
