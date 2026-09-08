@@ -15,6 +15,12 @@
             <a href="{% url 'catalogo:registro' %}" class="hero-btn-secondary">Crear cuenta</a>
         </div>
     </div>
+    <div class="hero-galeria">
+        <img src="{% static 'images/01-martillo.jpg' %}" alt="Martillo" class="hero-img">
+        <img src="{% static 'images/10-taladro.jpg' %}" alt="Taladro" class="hero-img">
+        <img src="{% static 'images/26-pintura.jpg' %}" alt="Pintura" class="hero-img">
+        <img src="{% static 'images/33-tubo-pvc.jpg' %}" alt="Tubo PVC" class="hero-img">
+    </div>
     <div class="hero-stats">
         <div class="stat">
             <span class="stat-num">40+</span>
@@ -31,45 +37,104 @@
     </div>
 </section>
 
+<section class="destacados">
+    <h2 class="section-title">Productos destacados</h2>
+    <p class="section-sub">Los más vendidos de nuestro catálogo</p>
+    <div class="dest-grid">
+        <a href="{% url 'catalogo:detalle' 10 %}" class="dest-card">
+            <img src="{% static 'images/10-taladro.jpg' %}" alt="Taladro eléctrico" class="dest-img">
+            <div class="dest-info">
+                <h3>Taladro eléctrico 650W</h3>
+                <span class="dest-precio">$45.990</span>
+            </div>
+        </a>
+        <a href="{% url 'catalogo:detalle' 1 %}" class="dest-card">
+            <img src="{% static 'images/01-martillo.jpg' %}" alt="Martillo" class="dest-img">
+            <div class="dest-info">
+                <h3>Martillo de uñas 16oz</h3>
+                <span class="dest-precio">$15.990</span>
+            </div>
+        </a>
+        <a href="{% url 'catalogo:detalle' 18 %}" class="dest-card">
+            <img src="{% static 'images/18-soldador.jpg' %}" alt="Soldador" class="dest-img">
+            <div class="dest-info">
+                <h3>Soldador inversor 200A</h3>
+                <span class="dest-precio">$89.990</span>
+            </div>
+        </a>
+        <a href="{% url 'catalogo:detalle' 12 %}" class="dest-card">
+            <img src="{% static 'images/12-sierra-circular.jpg' %}" alt="Sierra circular" class="dest-img">
+            <div class="dest-info">
+                <h3>Sierra circular 7.25"</h3>
+                <span class="dest-precio">$69.990</span>
+            </div>
+        </a>
+    </div>
+</section>
+
 <section class="categorias">
     <h2 class="section-title">Nuestras categorías</h2>
     <p class="section-sub">Todo lo que necesitas en un solo lugar</p>
     <div class="cat-grid">
         <a href="{% url 'catalogo:lista' %}" class="cat-card">
-            <div class="cat-icon">🔨</div>
-            <h3>Herramientas manuales</h3>
-            <p>Martillos, destornilladores, llaves y más</p>
-            <span class="cat-link">Ver productos →</span>
+            <div class="cat-img-wrap">
+                <img src="{% static 'images/05-sierra-manual.jpg' %}" alt="Herramientas" class="cat-img">
+            </div>
+            <div class="cat-texto">
+                <h3>Herramientas manuales</h3>
+                <p>Martillos, destornilladores, llaves y más</p>
+                <span class="cat-link">Ver productos →</span>
+            </div>
         </a>
         <a href="{% url 'catalogo:lista' %}" class="cat-card">
-            <div class="cat-icon">⚡</div>
-            <h3>Herramientas eléctricas</h3>
-            <p>Taladros, amoladoras, sierras circulares</p>
-            <span class="cat-link">Ver productos →</span>
+            <div class="cat-img-wrap">
+                <img src="{% static 'images/11-amoladora.jpg' %}" alt="Herramientas eléctricas" class="cat-img">
+            </div>
+            <div class="cat-texto">
+                <h3>Herramientas eléctricas</h3>
+                <p>Taladros, amoladoras, sierras circulares</p>
+                <span class="cat-link">Ver productos →</span>
+            </div>
         </a>
         <a href="{% url 'catalogo:lista' %}" class="cat-card">
-            <div class="cat-icon">🪛</div>
-            <h3>Fijaciones</h3>
-            <p>Tornillos, clavos, tarugos y anclajes</p>
-            <span class="cat-link">Ver productos →</span>
+            <div class="cat-img-wrap">
+                <img src="{% static 'images/20-tornillos.jpg' %}" alt="Fijaciones" class="cat-img">
+            </div>
+            <div class="cat-texto">
+                <h3>Fijaciones</h3>
+                <p>Tornillos, clavos, tarugos y anclajes</p>
+                <span class="cat-link">Ver productos →</span>
+            </div>
         </a>
         <a href="{% url 'catalogo:lista' %}" class="cat-card">
-            <div class="cat-icon">🎨</div>
-            <h3>Pinturas y acabados</h3>
-            <p>Pinturas, brochas, rodillos y lijas</p>
-            <span class="cat-link">Ver productos →</span>
+            <div class="cat-img-wrap">
+                <img src="{% static 'images/26-pintura.jpg' %}" alt="Pinturas" class="cat-img">
+            </div>
+            <div class="cat-texto">
+                <h3>Pinturas y acabados</h3>
+                <p>Pinturas, brochas, rodillos y lijas</p>
+                <span class="cat-link">Ver productos →</span>
+            </div>
         </a>
         <a href="{% url 'catalogo:lista' %}" class="cat-card">
-            <div class="cat-icon">🔧</div>
-            <h3>Plomería</h3>
-            <p>Tubos PVC, conexiones, llaves de paso</p>
-            <span class="cat-link">Ver productos →</span>
+            <div class="cat-img-wrap">
+                <img src="{% static 'images/33-tubo-pvc.jpg' %}" alt="Plomería" class="cat-img">
+            </div>
+            <div class="cat-texto">
+                <h3>Plomería</h3>
+                <p>Tubos PVC, conexiones, llaves de paso</p>
+                <span class="cat-link">Ver productos →</span>
+            </div>
         </a>
         <a href="{% url 'catalogo:lista' %}" class="cat-card">
-            <div class="cat-icon">💡</div>
-            <h3>Electricidad</h3>
-            <p>Cables, interruptores, iluminación LED</p>
-            <span class="cat-link">Ver productos →</span>
+            <div class="cat-img-wrap">
+                <img src="{% static 'images/38-cable.jpg' %}" alt="Electricidad" class="cat-img">
+            </div>
+            <div class="cat-texto">
+                <h3>Electricidad</h3>
+                <p>Cables, interruptores, iluminación LED</p>
+                <span class="cat-link">Ver productos →</span>
+            </div>
         </a>
     </div>
 </section>
