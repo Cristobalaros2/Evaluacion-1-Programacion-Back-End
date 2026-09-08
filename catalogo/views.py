@@ -179,6 +179,7 @@ def lista_productos(request):
     productos = _cargar_productos()
     total = len(productos)
     disponibles = sum(1 for p in productos if p["stock"] > 0)
+    agotados = total - disponibles
     username = request.session.get("username")
     es_admin = _es_admin(username) if username else False
     cart_count = len(_cargar_carrito(username)) if username else 0
@@ -186,6 +187,7 @@ def lista_productos(request):
         "productos": productos,
         "total": total,
         "disponibles": disponibles,
+        "agotados": agotados,
         "username": username,
         "es_admin": es_admin,
         "cart_count": cart_count,

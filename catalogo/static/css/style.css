@@ -143,6 +143,12 @@ footer {
     font-size: 0.85rem;
     color: #666;
 }
+.resumen-item.agotados .numero {
+    color: #c0392b;
+}
+.resumen-item.agotados .etiqueta {
+    color: #c0392b;
+}
 
 /* === LISTA: GRID Y CARDS === */
 .grid {
