@@ -45,10 +45,16 @@
     </div>
     <div class="carrito-acciones">
         <a href="{% url 'catalogo:lista' %}" class="volver">← Seguir comprando</a>
-        <form method="post" action="{% url 'catalogo:vaciar_carrito' %}" style="display:inline" onsubmit="return confirm('¿Vaciar todo el carrito?')">
-            {% csrf_token %}
-            <button type="submit" class="btn-vaciar">Vaciar carrito</button>
-        </form>
+        <div class="carrito-derecha">
+            <form method="post" action="{% url 'catalogo:vaciar_carrito' %}" style="display:inline" onsubmit="return confirm('¿Vaciar todo el carrito?')">
+                {% csrf_token %}
+                <button type="submit" class="btn-vaciar">Vaciar carrito</button>
+            </form>
+            <form method="post" action="{% url 'catalogo:realizar_compra' %}" style="display:inline" onsubmit="return confirm('¿Confirmar compra por ${{ total|floatformat:0 }}?')">
+                {% csrf_token %}
+                <button type="submit" class="btn-comprar">Comprar</button>
+            </form>
+        </div>
     </div>
 </div>
 {% else %}

@@ -515,3 +515,57 @@ def vaciar_carrito(request):
     _guardar_carrito(username, [])
     messages.info(request, "Carrito vaciado.")
     return redirect("catalogo:carrito")
+
+
+@require_POST
+def realizar_compra(request):
+    username = request.session.get("username")
+    if not username:
+        messages.error(request, "Inicia sesión para comprar.")
+        return redirect("catalogo:login")
+
+    carrito = _cargar_carrito(username)
+    if not carrito:
+        messages.error(request, "Tu carrito está vacío.")
+        return redirect("catalogo:carrito")
+
+    productos = _cargar_productos()
+
+    # Verificar stock de cada item
+    sin_stock = []
+    for item in carrito:
+        for p in productos:
+            if p["id"] == item["id"]:
+                if p["stock"] < item["cantidad"]:
+                    sin_stock.append(p["nombre"])
+                break
+
+    if sin_stock:
+        nombres = ", ".join(sin_stock)
+        messages.error(request, f"Stock insuficiente para: {nombres}. Reduce la cantidad o elimina estos productos.")
+        return redirect("catalogo:carrito")
+
+    # Descontar stock
+    for item in carrito:
+        for p in productos:
+            if p["id"] == item["id"]:
+                p["stock"] -= item["cantidad"]
+                break
+
+    _guardar_productos(productos)
+
+    # Calcular total
+    total = sum(item["precio"] * item["cantidad"] for item in carrito)
+    items_comprados = carrito[:]
+
+    # Vaciar carrito
+    _guardar_carrito(username, [])
+
+    messages.success(request, "¡Compra realizada exitosamente!")
+    return render(request, "catalogo/compra_exitosa.html", {
+        "items": items_comprados,
+        "total": total,
+        "username": username,
+        "es_admin": _es_admin(username),
+        "cart_count": 0,
+    })

@@ -685,3 +685,98 @@ footer {
     color: #888;
     margin-bottom: 1rem;
 }
+.carrito-derecha {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.btn-comprar {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+.btn-comprar:hover {
+    background: #2ecc71;
+}
+
+/* === COMPRA EXITOSA === */
+.compra-exitosa {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.compra-icono {
+    font-size: 3.5rem;
+    margin-bottom: 0.8rem;
+}
+.compra-exitosa h2 {
+    color: #1a5276;
+    margin-bottom: 0.4rem;
+}
+.compra-sub {
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+.compra-detalle {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+    border-top: 5px solid #27ae60;
+}
+.compra-detalle h3 {
+    color: #1a5276;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.compra-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+}
+.compra-item:last-of-type {
+    border-bottom: none;
+}
+.compra-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.compra-info {
+    flex: 1;
+}
+.compra-nombre {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+}
+.compra-cant {
+    font-size: 0.8rem;
+    color: #888;
+}
+.compra-subtotal {
+    font-weight: 600;
+    color: #27ae60;
+    white-space: nowrap;
+}
+.compra-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #eee;
+}
+.compra-total strong {
+    color: #27ae60;
+}
