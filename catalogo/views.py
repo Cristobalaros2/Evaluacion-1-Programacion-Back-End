@@ -164,6 +164,17 @@ def _guardar_carrito(username, carrito):
 
 # === VISTAS PÚBLICAS ===
 
+def landing_page(request):
+    username = request.session.get("username")
+    es_admin = _es_admin(username) if username else False
+    cart_count = len(_cargar_carrito(username)) if username else 0
+    return render(request, "catalogo/landing.html", {
+        "username": username,
+        "es_admin": es_admin,
+        "cart_count": cart_count,
+    })
+
+
 def lista_productos(request):
     productos = _cargar_productos()
     total = len(productos)

@@ -1,0 +1,44 @@
+{% extends "catalogo/base.html" %}
+{% load static %}
+
+{% block title %}Ferretería El Martillo — Tu aliado en construcción{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Ferretería El Martillo</h1>
+        <p class="hero-sub">Todo lo que necesitas para tu proyecto de construcción y hogar</p>
+        <p class="hero-desc">Más de 40 productos de calidad en herramientas, pinturas, plomería y electricidad.</p>
+        <a href="{% url 'catalogo:lista' %}" class="hero-btn">Ver catálogo</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <div class="feature-icon">🔨</div>
+        <h3>Herramientas</h3>
+        <p>Manuales y eléctricas de las mejores marcas</p>
+    </div>
+    <div class="feature">
+        <div class="feature-icon">🎨</div>
+        <h3>Pinturas</h3>
+        <p>Acabados, brochas y todo para pintar</p>
+    </div>
+    <div class="feature">
+        <div class="feature-icon">🔧</div>
+        <h3>Plomería</h3>
+        <p>Tubos, conexiones y accesorios</p>
+    </div>
+    <div class="feature">
+        <div class="feature-icon">💡</div>
+        <h3>Electricidad</h3>
+        <p>Cables, interruptores e iluminación</p>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>¿Listo para empezar?</h2>
+    <p>Explora nuestro catálogo y encuentra todo lo que necesitas</p>
+    <a href="{% url 'catalogo:lista' %}" class="cta-btn">Ir al catálogo →</a>
+</section>
+{% endblock %}

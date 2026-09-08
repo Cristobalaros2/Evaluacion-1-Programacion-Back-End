@@ -4,8 +4,9 @@ from . import views
 app_name = "catalogo"
 
 urlpatterns = [
-    path("", views.lista_productos, name="lista"),
-    path("<int:producto_id>/", views.detalle_producto, name="detalle"),
+    path("", views.landing_page, name="landing"),
+    path("catalogo/", views.lista_productos, name="lista"),
+    path("catalogo/<int:producto_id>/", views.detalle_producto, name="detalle"),
     path("login/", views.vista_login, name="login"),
     path("registro/", views.vista_registro, name="registro"),
     path("logout/", views.vista_logout, name="logout"),

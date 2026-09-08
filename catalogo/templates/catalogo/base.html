@@ -15,6 +15,7 @@
     </header>
     <nav>
         <div class="nav-links">
+            <a href="{% url 'catalogo:landing' %}">Inicio</a>
             <a href="{% url 'catalogo:lista' %}">Catálogo</a>
             {% if es_admin %}
                 <a href="{% url 'catalogo:admin_productos' %}">Administrar</a>
