@@ -148,7 +148,7 @@
     "nombre": "Generator portátil 3500W",
     "categoria": "Herramientas eléctricas",
     "precio": 299990,
-    "stock": 2,
+    "stock": 0,
     "imagen": "images/19-generator.jpg"
   },
   {
@@ -276,7 +276,7 @@
     "nombre": "Llave de paso 1/2\"",
     "categoria": "Plomería",
     "precio": 12990,
-    "stock": 18,
+    "stock": 0,
     "imagen": "images/35-llave-paso.jpg"
   },
   {
