@@ -52,7 +52,7 @@
             </form>
             <form method="post" action="{% url 'catalogo:realizar_compra' %}" style="display:inline" onsubmit="return confirm('¿Confirmar compra por ${{ total|floatformat:0 }}?')">
                 {% csrf_token %}
-                <button type="submit" class="btn-comprar">Comprar</button>
+                <button type="submit" class="btn-comprar">🛒 Comprar ahora</button>
             </form>
         </div>
     </div>
